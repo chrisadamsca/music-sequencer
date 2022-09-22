@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/music-sequencer/static/css/main.5157cb15.css",
+    "main.js": "/music-sequencer/static/js/main.8fe09621.js",
+    "static/js/787.b3f83450.chunk.js": "/music-sequencer/static/js/787.b3f83450.chunk.js",
+    "index.html": "/music-sequencer/index.html",
+    "main.5157cb15.css.map": "/music-sequencer/static/css/main.5157cb15.css.map",
+    "main.8fe09621.js.map": "/music-sequencer/static/js/main.8fe09621.js.map",
+    "787.b3f83450.chunk.js.map": "/music-sequencer/static/js/787.b3f83450.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5157cb15.css",
+    "static/js/main.8fe09621.js"
+  ]
+}
