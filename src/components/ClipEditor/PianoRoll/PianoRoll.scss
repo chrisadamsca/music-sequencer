@@ -1,0 +1,57 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_variables.scss';
+
+
+.piano-roll {
+  display: flex;
+  flex: 1;
+  overflow: scroll;
+}
+
+.keyboard {
+  border-right: 0.5px solid $primary;
+}
+
+.piano-key {
+  height: 1.5rem;
+  width: 100%;
+  background: white;
+  line-height: 1.5rem;
+  padding-left: 0.3em;
+  font-size: 0.6rem;
+  border-bottom: 0.5px solid $primary;
+
+  &.black-key {
+    background: $primary;
+    color: white;
+  }
+}
+
+.roll {
+  width: 200%;
+  position: relative;
+}
+
+.roll-key {
+  height: 1.5rem;
+  width: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0.5px, transparent 0.5px);
+  background-color: white;
+  
+  &.black-key {
+    background-color: $secondary;
+  }
+
+}
+
+.note {
+  min-width: 20px;
+  height: 1.5rem;
+  background: $primary;
+  border: 1px solid white;
+
+  &.selected {
+    // background: blue;
+  }
+
+}

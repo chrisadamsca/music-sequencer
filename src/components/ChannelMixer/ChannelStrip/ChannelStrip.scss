@@ -1,0 +1,79 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_variables.scss';
+
+$slider-height: 5.8rem;
+$slider-width: .5rem;
+$slider-border-radius: $slider-width / 2;
+
+.channel-strip {
+  width: 5.5rem;
+  height: 100%;
+  background: $secondary;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-right: 1px solid $primary;
+  color: $black;
+}
+
+.master-strip {
+  border-left: 1px solid $primary;
+  border-right: none;
+}
+
+.volume-slider-wrapper {
+  height: $slider-height;
+  width: $slider-width;
+  position: relative;
+}
+
+.volume-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-appearance: none;
+  background: white;
+  appearance: none;
+  height: $slider-width;
+  width: $slider-height;
+  outline: none;
+  transition: opacity .2s;
+  transform: rotateZ(-90deg) translate3d(-100%, 0, 0);
+  transform-origin: -1% -1%;
+  border-radius: $slider-border-radius;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: $slider-width;
+    height: $slider-width;
+    background: $primary;
+    border-radius: $slider-border-radius;
+    cursor: pointer;
+  }
+
+}
+
+.mute-button {
+  margin-top: 1rem;
+  border: 1px solid $primary;
+  background: white;
+  padding: 0.3em 0.5em;
+  color: $primary;
+  border-radius: $border-radius;
+  font-size: $font-m;
+  font-weight: bold;
+
+  &.is--muted {
+    background: $primary;
+    color: white;
+  }
+
+}
+
+h3 {
+  font-size: $font-m;
+  font-weight: bold;
+  margin-top: 0;
+}

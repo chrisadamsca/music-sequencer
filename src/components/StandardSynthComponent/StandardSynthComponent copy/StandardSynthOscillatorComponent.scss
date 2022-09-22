@@ -1,0 +1,79 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_variables.scss';
+
+.oscillator {
+  border-right: 1px solid $primary;
+  padding: .7rem;
+  background: $secondary;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: $font-m;
+    padding: 1rem 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  &__settings {
+    display: flex;
+    flex: 1;
+    padding: 1rem 2rem;
+  }
+
+}
+
+.waveform-select {
+  width: 6rem;
+  margin: 0 1.5rem;
+}
+
+.waveform-select-preview {
+  height: 3rem;
+  width: 100%;
+  background: $secondary;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  border: 1px solid $primary;
+  border-bottom: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.waveform-image {
+  width: 70%;
+  height: auto;
+}
+
+.waveform-select-buttons {
+  width: 100%;
+  display: flex;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+  border: 1px solid $primary;
+  
+
+  button {
+    width: 33.33%;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+    font-size: $font-s;
+    font-weight: bold;
+    outline: none;
+
+    &.selected {
+      background: $primary;
+      color: white;
+    }
+
+  }
+
+}

@@ -1,0 +1,60 @@
+@import '../../styles/_colors.scss';
+
+#ArrangementView {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.channels-scroll {
+  position: relative;
+  flex-grow: 1;
+  flex-basis:0;
+  overflow-y: scroll;
+  
+}
+
+.channels-container {
+  position: relative;
+}
+
+.timer {
+  height: 100%;
+  width: 0.5px;
+  background: rgb(100, 100, 100);
+  position: absolute;
+  left: 3px;
+  top: 0;
+}
+
+.add-buttons {
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  display: flex;
+
+  .default-button {
+    margin-right: 0.5rem;
+
+    // &.add-midi-button {
+    //   border-color: $midi-0;
+    //   color: $midi-0;
+    // }
+  
+    // &.add-audio-button {
+    //   border-color: $audio-0;
+    //   color: $audio-0;
+    // }
+    
+  }
+
+}
+
+.save-button-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 1rem;
+
+}

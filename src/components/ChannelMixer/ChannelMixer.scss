@@ -1,0 +1,16 @@
+@import '../../styles/_colors.scss';
+
+$slider-height: 10rem;
+$slider-width: .5rem;
+
+.channels-mixer {
+  width: 100%;
+  height: 100%;
+  background: white;
+  display: flex;
+}
+
+.channels {
+  flex: 1;
+  display: flex;
+}

@@ -1,0 +1,65 @@
+@import '../../../styles/_colors.scss';
+@import '../../../styles/_variables.scss';
+
+.filter {
+  border-right: 1px solid $primary;
+  padding: .7rem;
+  background: $secondary;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-size: $font-m;
+    padding: 1rem 0;
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+
+  &__settings {
+    display: flex;
+    flex: 1;
+    padding: 1rem 2rem;
+  }
+
+}
+
+.filter-type-select {
+  width: 6rem;
+  margin: 0 1.5rem;
+}
+
+.filter-type-select-preview {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+  background: $secondary;
+  border-radius: $border-radius;
+  border: 1px solid $primary;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: $border-radius;
+    border-top: 0.9rem solid $secondary;
+    border-bottom: 0.9rem solid $secondary;
+    border-right: 1rem solid $secondary;
+    border-left: 1rem solid $secondary;
+  }
+
+}
+
+.filter-type-image {
+  width: 70%;
+  height: auto;
+  position: relative;
+}

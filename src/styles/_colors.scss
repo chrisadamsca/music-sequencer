@@ -1,0 +1,17 @@
+$black: #444444;
+$grey: #F6F6F6;
+$some-green-0: hsl(153, 21%, 60%);
+$some-green-1: hsl(153, 21%, 80%);
+
+
+
+$primary: $some-green-0;
+$secondary: #e0ebe5;
+
+$midi-0: $some-green-1;
+$midi-1: lighten($midi-0, 10%);
+$midi-2: rgba($midi-0,0.4);
+
+$audio-0: #CDE2C9;
+$audio-1: lighten($audio-0, 10%);
+$audio-2: rgba($audio-1, 0.4);

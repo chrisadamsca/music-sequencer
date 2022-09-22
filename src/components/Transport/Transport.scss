@@ -1,0 +1,89 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_variables.scss';
+
+#Transport {
+  padding-top: 1.5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bpm-input {
+  display: inline-block;
+  width: 60px;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: transparent;
+}
+
+.metrum-input {
+  display: inline-block;
+  width: 60px;
+  padding: 0;
+  border: none;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: transparent;
+  margin-left: 1rem;
+}
+
+.metronome-button {
+  height: 1rem;
+  background: $grey;
+  display: flex;
+  margin-left: 0.75rem;
+  padding: 1rem 0.5rem;
+  align-items: center;
+
+  &::before, &::after {
+    content: '';
+    box-sizing: border-box;
+    display: block;
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    background: $black;
+    margin: 0 0.15rem;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  &::before {
+    border: 1px solid $black;
+    background: $grey;
+    animation-delay: 0.5s;
+  }
+  
+  &.is--running {
+    &::before, &::after {
+      animation-name: metronome;
+    }
+  }
+
+}
+
+@keyframes metronome {
+  0% {
+    border: none;
+    background: $black;
+  }
+  49% {
+    border: none;
+    background: $black;
+  }
+  50% {
+    border: 1px solid $black;
+    background: $grey;
+  }
+  99% {
+    border: 1px solid $black;
+    background: $grey;
+  }
+  100% {
+    border: none;
+    background: $black;
+  }
+}

@@ -1,0 +1,42 @@
+@import '../../styles/_colors.scss';
+@import '../../styles/_variables.scss';
+
+.dial {
+
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+
+  .knob {
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    background: $primary;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      bottom: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0.5rem;
+      height: 0.5rem;
+      border-radius: 50%;
+      background: white;
+    }
+  }
+
+  label {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 0.5rem;
+    font-size: 0.75rem;
+    font-size: $font-s;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+}
